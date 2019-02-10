@@ -6,7 +6,7 @@ class App extends Component {
     return (
       <Container text>
         <Header as="h2" textAlign="center">
-          Header
+          React Axios Tutorial
         </Header>
         <p>
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
