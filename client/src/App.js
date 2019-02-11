@@ -1,13 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import {
-  Container,
-  Header,
-  Card,
-  List,
-  Divider,
-  Button
-} from "semantic-ui-react";
+import { Container, Header, Card, Divider, Button } from "semantic-ui-react";
 import Create from "./components/Create";
 import Index from "./components/Index";
 
@@ -22,17 +15,13 @@ class App extends Component {
           </Header>
           <Card centered={true}>
             <Card.Content>
-              <List>
-                <List.Item>
-                  <Link to={"/create"}>Create</Link>
-                </List.Item>
-                <List.Item>
-                  <Link to={"/index"}>Index</Link>
-                </List.Item>
-              </List>
               <Button.Group fluid>
-                <Button>Create</Button>
-                <Button>Index</Button>
+                <Button as={Link} to="/create">
+                  Create
+                </Button>
+                <Button as={Link} to="/index">
+                  Index
+                </Button>
               </Button.Group>
 
               <Divider />
