@@ -7,10 +7,6 @@ export default class Index extends Component {
       <Card>
         <Card.Content>
           <Card.Header>This is the Index component.</Card.Header>
-          {/* <Card.Meta>Co-Worker</Card.Meta>
-          <Card.Description>
-            Matthew is a pianist living in Nashville.
-          </Card.Description> */}
         </Card.Content>
       </Card>
     );
