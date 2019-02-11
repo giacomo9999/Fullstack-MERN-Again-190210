@@ -13,7 +13,7 @@ class App extends Component {
           <Header as="h2" textAlign="center">
             React Axios Tutorial
           </Header>
-          <Card centered={true}>
+          <Card fluid centered={true}>
             <Card.Content>
               <Button.Group fluid>
                 <Button as={Link} to="/create">

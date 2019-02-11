@@ -26,7 +26,7 @@ export default class Create extends Component {
 
   render() {
     return (
-      <Card>
+      <Card fluid>
         <Card.Content>
           <Card.Header>Add New Server</Card.Header>
           <Form>
