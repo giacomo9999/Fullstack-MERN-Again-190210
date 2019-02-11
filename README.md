@@ -6,5 +6,4 @@ except that
 1) I used Semantic UI instead of Bootstrap and 
 2) I used a MongoDB database hosted on mLab.com instead of hosting the data locally.
 
-10 Feb - Attempting to deploy app to Heroku.
-
+Successfully deployed on Heroku: https://fullstack-test-190210.herokuapp.com/index . Getting the config variables right was a bit tricky.
