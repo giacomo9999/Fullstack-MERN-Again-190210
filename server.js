@@ -9,7 +9,7 @@ const cors = require("cors");
 require("dotenv").config();
 const ServerPortRouter = require("./routes/ServerPortRouter");
 
-mongoose.connect(config.DB, { useNewUrlParser: true }).then(() => {
+mongoose.connect(process.env.DB, { useNewUrlParser: true }).then(() => {
   console.log("Connected to database."),
     err => {
       console.log("Cannot connect to database.");
@@ -31,5 +31,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log("Server running on the following port", PORT);
+  console.log("Server running on the following port", port);
 });
