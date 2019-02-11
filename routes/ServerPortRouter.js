@@ -4,7 +4,7 @@ const ServerPortRouter = express.Router();
 
 const ServerPort = require("../models/ServerPort");
 
-ServerPortRouter.route("./add").post((req, res) => {
+ServerPortRouter.route("/add").post((req, res) => {
   const serverport = new ServerPort(req.body);
   serverport
     .save()
